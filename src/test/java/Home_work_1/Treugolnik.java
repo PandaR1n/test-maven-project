@@ -1,3 +1,5 @@
+package Home_work_1;
+
 public class Treugolnik {
     private static final double a = 100 , h = 110;
 

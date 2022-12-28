@@ -1,3 +1,5 @@
+package Home_work_1;
+
 public class kvadarat {
     private static final double side = 100;
 
