@@ -11,7 +11,8 @@ public class Employees_on_the_project {
         System.out.println("Прогаммистов всего " + programmers);
         System.out.println("Тестеровшиков на одного прогаммиста " + testers);
         System.out.println("Специалистов поддержки на одного программиста " + support);
-        System.out.println("Тестировщиков, требуемое на проекте " + getTesters + ", а специалистов поддержки, требуемое на проекте равно " + getSupport + ". Итого общее количество технических специалистов на проекте " + totalSpecialist + " человек.");
+        System.out.println("Тестировщиков, требуемое на проекте " + getTesters + ", а специалистов поддержки, требуемое на проекте равно "
+                          + getSupport + ". \n Итого общее количество технических специалистов на проекте " + totalSpecialist + " человек.");
     }
 
 

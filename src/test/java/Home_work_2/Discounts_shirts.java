@@ -1,8 +1,11 @@
 package Home_work_2;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Discounts_shirts {
-    private static final int  priceOneShirt = 1500, numberShirts = 3, quantityShirtsDiscount = 5;
-    private  static final float discount = 30.5F;
+    private static final int priceOneShirt = 1500, numberShirts = 3, quantityShirtsDiscount = 5;
+    private static final float discount = 30.5F;
 
     public static void main(String[] args) {
 
@@ -10,10 +13,11 @@ public class Discounts_shirts {
         int totalPriceShirts = priceOneShirt * numberShirts;
         int priceOfPurchasedShirts = priceOneShirt * buyInAddition;
         int priceOfAllShirts = priceOneShirt * quantityShirtsDiscount;
-        float savedMoney = priceOfAllShirts * discount /100;
+        float savedMoney = priceOfAllShirts * discount / 100;
         float discountShirts = priceOfAllShirts - savedMoney;
         float discountShirtPrice = discountShirts / quantityShirtsDiscount;
-        float freeShirt = savedMoney / priceOneShirt;
+        int freeShirt = (int) (savedMoney / priceOneShirt);
+//        BigDecimal  freeShirt = new BigDecimal(savedMoney / priceOneShirt).setScale(0, RoundingMode.DOWN);
 
         System.out.println("количество выбранных рубашек = " + numberShirts);
         System.out.println("сколько рубашек купить для скидки = " + quantityShirtsDiscount);
@@ -22,9 +26,9 @@ public class Discounts_shirts {
         System.out.println("цена докупленных рубашек = " + priceOfPurchasedShirts);
         System.out.println("цена всех рубашек = " + priceOfAllShirts);
         System.out.println("сэкономленные деньги = " + savedMoney);
-        System.out.println("цена рубашек со скидкой = "+ discountShirts);
+        System.out.println("цена рубашек со скидкой = " + discountShirts);
         System.out.println("цена одной рубашки со скидкой = " + discountShirtPrice);
-        System.out.println("халява = " +freeShirt);
+        System.out.println("халява = " + freeShirt);
     }
 
 }
