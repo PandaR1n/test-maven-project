@@ -1,7 +1,9 @@
 package Home_work_2;
 
 public class Employees_on_the_project {
-    private static final int programmers = 3, testers = 14, support = 5;
+    private static final int programmers = 3;
+    private static final int testers = 14;
+    private static final int support = 5;
 
     public static void main(String[] args) {
 
@@ -12,7 +14,7 @@ public class Employees_on_the_project {
         System.out.println("Тестеровшиков на одного прогаммиста " + testers);
         System.out.println("Специалистов поддержки на одного программиста " + support);
         System.out.println("Тестировщиков, требуемое на проекте " + getTesters + ", а специалистов поддержки, требуемое на проекте равно "
-                          + getSupport + ". \n Итого общее количество технических специалистов на проекте " + totalSpecialist + " человек.");
+                + getSupport + ". \n Итого общее количество технических специалистов на проекте " + totalSpecialist + " человек.");
     }
 
 

@@ -1,10 +1,8 @@
 package Home_work_2;
-
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-
 public class Discounts_shirts {
-    private static final int priceOneShirt = 1500, numberShirts = 3, quantityShirtsDiscount = 5;
+    private static final int priceOneShirt = 1500;
+    public static final int  numberShirts = 3;
+    public static final int  quantityShirtsDiscount = 5;
     private static final float discount = 30.5F;
 
     public static void main(String[] args) {
@@ -30,5 +28,4 @@ public class Discounts_shirts {
         System.out.println("цена одной рубашки со скидкой = " + discountShirtPrice);
         System.out.println("халява = " + freeShirt);
     }
-
 }

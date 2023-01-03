@@ -1,8 +1,9 @@
 package Home_work_2;
 
 public class Travel_time {
-    private static float  speed = 39.6F, coefficient = 1.34F;
-    private static int distance = 54;
+    private static final float  speed = 39.6F;
+    private static final float coefficient = 1.34F;
+    private static final int distance = 54;
 
     public static void main(String[] args) {
         float time = distance / speed;

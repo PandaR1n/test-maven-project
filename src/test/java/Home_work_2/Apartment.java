@@ -2,7 +2,8 @@ package Home_work_2;
 
 public class Apartment {
 
-    public static final double price = 8000000, firstPercent = 9.6;
+    public static final int price = 8000000;
+    public static final double firstPercent = 9.6;
 
     public static void main(String[] args) {
 
