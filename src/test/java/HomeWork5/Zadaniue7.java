@@ -18,5 +18,6 @@ public class Zadaniue7 {
         Collections.shuffle(list);
         for (int i = 0; i < 10; i++)
             System.out.println(list.get(i));
+
     }
 }
